@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão EcoAgro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">Conexão <span>EcoAgro</span></div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-target="ecoagro">EcoAgro</a></li>
+                <li><a href="#" class="nav-link" data-target="sobre-mim">Sobre Mim</a></li>
+                <li><a href="#" class="nav-link" data-target="agrinho">O Agrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section id="ecoagro" class="tab-content active">
+            <div class="hero">
+                <h1>Equilibrando Lucro e Preservação</h1>
+                <p>Uma plataforma de conhecimento e vitrine conectando pequenos produtores locais a técnicas sustentáveis.</p>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <h3>🌱 Vitrine Verde</h3>
+                    <p>Histórias de sucesso de agricultores da região que aumentaram a produção protegendo as nascentes e matas ciliares.</p>
+                    <blockquote class="case">
+                        "Recuperei a nossa nascente e, com o solo mais úmido, a colheita de milho subiu 20%." 
+                        <br><strong>- Seu Jamil, Produtor Local</strong>
+                    </blockquote>
+                </div>
+
+                <div class="card">
+                    <h3>🛸 Painel de Inovações</h3>
+                    <p>Tecnologias acessíveis para o campo:</p>
+                    <ul>
+                        <li><strong>Drones:</strong> Aplicação precisa de defensivos sem desperdício.</li>
+                        <li><strong>Sensores de Umidade:</strong> Monitoramento de baixo custo para o solo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="calculator-box">
+                <h3>🧮 Calculadora EcoEficiente</h3>
+                <p>Simule sua propriedade e descubra práticas sustentáveis recomendadas.</p>
+                <form id="ecoCalc">
+                    <div class="form-group">
+                        <label for="tamanho">Tamanho da Propriedade (em hectares):</label>
+                        <input type="number" id="tamanho" required min="1" placeholder="Ex: 5">
+                    </div>
+                    <div class="form-group">
+                        <label for="cultura">Tipo de Cultura Principal:</label>
+                        <select id="cultura">
+                            <option value="graos">Grãos (Milho/Soja)</option>
+                            <option value="hortifruti">Hortifrúti (Legumes/Verduras)</option>
+                            <option value="fruticultura">Fruticultura</option>
+                        </select>
+                    </div>
+                    <button type="submit">Calcular Práticas</button>
+                </form>
+                <div id="resultadoCalc" class="result-box hidden"></div>
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="tab-content">
+            <h2>Sobre Mim</h2>
+            <div class="card">
+                <p>Olá! Seja bem-vindo ao meu projeto.</p>
+                <p>Sou um estudante/desenvolvedor apaixonado por tecnologia e sustentabilidade. Desenvolvi o <strong>Conexão EcoAgro</strong> com o objetivo de criar uma ponte real e prática entre a inovação tecnológica e o pequeno produtor rural, mostrando que a preservação ambiental caminha lado a lado com a rentabilidade no campo.</p>
+            </div>
+        </section>
+
+        <section id="agrinho" class="tab-content">
+            <h2>O Programa Agrinho</h2>
+            <div class="card">
+                <p>O <strong>Agrinho</strong> é o maior programa de responsabilidade social do sistema Faep/Senar, completando anos de atuação nas escolas públicas e particulares.</p>
+                <p>Ele incentiva a prática pedagógica através de projetos que tratam de temas de extrema relevância social, ambiental e econômica, como a sustentabilidade no campo, cidadania e a conexão entre a cidade e o meio rural. Este site é uma resposta prática e tecnológica aos desafios propostos pelo programa.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Conexão EcoAgro - Desenvolvido para o Projeto Agrinho.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
